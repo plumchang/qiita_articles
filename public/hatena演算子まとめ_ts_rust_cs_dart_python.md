@@ -7,7 +7,7 @@ tags:
   - Rust
   - TypeScript
 private: false
-updated_at: '2024-06-12T17:25:49+09:00'
+updated_at: '2024-06-12T17:44:20+09:00'
 id: a1e7ad835af557b24a68
 organization_url_name: null
 slide: false
