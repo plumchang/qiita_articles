@@ -7,7 +7,7 @@ tags:
   - Rust
   - TypeScript
 private: false
-updated_at: '2024-06-12T16:46:06+09:00'
+updated_at: '2024-06-12T17:25:49+09:00'
 id: a1e7ad835af557b24a68
 organization_url_name: null
 slide: false
@@ -55,7 +55,7 @@ print(isAdult); // Output: Yes
 ```
 
 #### （Rust）
-Rustには直接の三項演算子はありませんが、`if`文を使って同じことができます。
+Rustには直接の三項演算子はありませんが、`if`式を使って同じことができます。
 ```rust
 let age = 18;
 let is_adult = if age >= 18 { "Yes" } else { "No" };
@@ -63,7 +63,7 @@ println!("{}", is_adult); // Output: Yes
 ```
 
 #### （Python）
-Pythonには三項演算子はありませんが、`if`文を使って同じことができます。
+Pythonには三項演算子はありませんが、条件式を使って同じことができます。
 ```python
 age = 18
 is_adult = "Yes" if age >= 18 else "No"
@@ -200,6 +200,22 @@ Pythonではnull合体演算子が直接サポートされていません。
 ```python
 name = None
 default_name = name or "Guest"  # "Guest"（nameがNoneなので）
+```
+
+**いただいた[コメント](https://qiita.com/plumchang/items/a1e7ad835af557b24a68#comment-65f2fffe90755c79c0ff)より追記**
+
+`or`演算子は、`None`以外のFalsyな値（空文字列 '', 空リスト [], 0, False など）に対してもデフォルト値を設定する点で、null合体演算子`??`とは挙動が異なるため、注意が必要です。
+
+Pythonの場合
+```python
+name = ""
+default_name = name or "Guest"  # "Guest"
+```
+
+TypeScriptの場合
+```typescript
+let name = "";
+let defaultName = name ?? "Guest"; // ""
 ```
 
 ### エラー・None委譲

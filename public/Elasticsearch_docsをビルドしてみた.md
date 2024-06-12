@@ -7,7 +7,7 @@ tags:
 private: false
 updated_at: '2019-12-17T22:26:16+09:00'
 id: 8bdb1577fe23b788f327
-organization_url_name: fujitsu
+organization_url_name: null
 slide: false
 ignorePublish: false
 ---
